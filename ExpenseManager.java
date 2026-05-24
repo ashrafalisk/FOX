@@ -11,7 +11,7 @@ class ExpenseManager {
         saveToFile();
     }
 
-    void viewExpenses() {
+    void viewExpenses(){
         loadFromFile();
         for (Expense e : expenses) {
             System.out.println(e.date + " | " + e.category + " | " + e.amount);
